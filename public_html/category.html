@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Luxury Beauty Products | Curated Selection</title>
+    <meta
+      name="description"
+      content="Explore curated luxury beauty products. Premium skincare, serums, and hair tools from top brands on Amazon."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Luxury Beauty for Your Skin</h1>
+          <p class="affiliate-badge">Amazon Affiliate Program Member</p>
+          <p class="subtitle">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Watchlist</a>
+          <a href="login.html" id="authLink">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="category-header">
+        <div class="container">
+          <h2 id="categoryTitle">Loading...</h2>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <p class="curated-text">
+            Curated luxury products selected based on brand reputation and
+            customer interest.
+          </p>
+          <div id="productGrid" class="product-grid">
+            <!-- Products loaded dynamically -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          As an Amazon Associate, we may earn from qualifying purchases. Product
+          images are used for illustrative purposes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/tracking.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

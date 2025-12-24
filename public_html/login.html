@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Save Your Luxury Beauty Watchlist</title>
+    <meta
+      name="description"
+      content="Login to save and manage your favorite luxury beauty products from top brands."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Luxury Beauty for Your Skin</h1>
+          <p class="affiliate-badge">Amazon Affiliate Program Member</p>
+          <p class="subtitle">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Watchlist</a>
+          <a href="login.html" id="authLink">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <div class="container">
+          <div class="auth-container">
+            <h2 id="authTitle">Login</h2>
+            <div
+              id="errorMessage"
+              class="error-message"
+              style="display: none"
+            ></div>
+            <div
+              id="successMessage"
+              class="success-message"
+              style="display: none"
+            ></div>
+
+            <form id="authForm">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required minlength="6" />
+              </div>
+              <button type="submit" id="submitBtn" class="btn-primary">
+                Login
+              </button>
+            </form>
+
+            <div class="auth-links">
+              <p id="toggleAuth">
+                Don't have an account? <a href="#" id="toggleLink">Sign up</a>
+              </p>
+              <p><a href="#" id="resetPasswordLink">Forgot password?</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          As an Amazon Associate, we may earn from qualifying purchases. Product
+          images are used for illustrative purposes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

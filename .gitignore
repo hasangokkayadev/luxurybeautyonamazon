@@ -1,0 +1,27 @@
+# Firebase
+firebase/functions/node_modules/
+firebase/functions/.runtimeconfig.json
+.firebase/
+.firebaserc
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary
+*.tmp
+*.temp

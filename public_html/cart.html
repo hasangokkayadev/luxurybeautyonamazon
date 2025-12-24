@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Luxury Beauty Watchlist | Save Products</title>
+    <meta
+      name="description"
+      content="View and manage your saved luxury beauty products. Purchase directly on Amazon."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Luxury Beauty for Your Skin</h1>
+          <p class="affiliate-badge">Amazon Affiliate Program Member</p>
+          <p class="subtitle">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Watchlist</a>
+          <a href="login.html" id="authLink">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <div class="container">
+          <h2>Your Watchlist</h2>
+          <div id="authRequired" class="auth-message" style="display: none">
+            <p>
+              Please <a href="login.html">login</a> to use the watchlist
+              feature.
+            </p>
+          </div>
+          <div id="cartContent" style="display: none">
+            <p class="cart-notice">
+              Items in your watchlist are saved for your reference. All
+              purchases are completed on Amazon.
+            </p>
+            <div id="cartItems" class="cart-items">
+              <!-- Cart items loaded dynamically -->
+            </div>
+            <div id="emptyCart" style="display: none">
+              <p>
+                Your watchlist is empty.
+                <a href="index.html">Browse products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          As an Amazon Associate, we may earn from qualifying purchases. Product
+          images are used for illustrative purposes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
